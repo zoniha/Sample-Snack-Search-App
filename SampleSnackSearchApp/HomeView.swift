@@ -10,6 +10,16 @@ struct HomeView: View {
 				snackDataList.searchSnack(keyword: inputText)
 			})
 			.padding()
+
+			List(snackDataList.snackList) { snack in
+				HStack {
+					Image(uiImage: snack.image)
+						.resizable()
+						.aspectRatio(contentMode: .fit)
+						.frame(height: 40)
+					Text(snack.name)
+				}
+			}
 		}
 	}
 }
