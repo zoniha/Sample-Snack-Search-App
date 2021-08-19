@@ -1,13 +1,12 @@
 import SwiftUI
+import SafariServices
 
-struct DetailView: View {
-    var body: some View {
-        Text("")
-    }
-}
+struct DetailView: UIViewControllerRepresentable {
+	var url: URL
 
-struct DetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailView()
-    }
+	func makeUIViewController(context: Context) -> SFSafariViewController {
+		return SFSafariViewController(url: url)
+	}
+
+	func updateUIViewController(_ uiViewController: SFSafariViewController, context: Context) {}
 }
