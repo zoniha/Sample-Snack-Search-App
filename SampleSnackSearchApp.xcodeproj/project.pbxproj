@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41784E0426CE9E4D0007A46C /* SnackData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41784E0326CE9E4C0007A46C /* SnackData.swift */; };
 		41DA6E3C26CE8AAA000CC7FD /* SampleSnackSearchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA6E3B26CE8AAA000CC7FD /* SampleSnackSearchAppApp.swift */; };
-		41DA6E3E26CE8AAA000CC7FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA6E3D26CE8AAA000CC7FD /* ContentView.swift */; };
+		41DA6E3E26CE8AAA000CC7FD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA6E3D26CE8AAA000CC7FD /* HomeView.swift */; };
 		41DA6E4026CE8AAF000CC7FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41DA6E3F26CE8AAF000CC7FD /* Assets.xcassets */; };
 		41DA6E4326CE8AAF000CC7FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41DA6E4226CE8AAF000CC7FD /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41784E0326CE9E4C0007A46C /* SnackData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackData.swift; sourceTree = "<group>"; };
 		41DA6E3826CE8AAA000CC7FD /* SampleSnackSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleSnackSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41DA6E3B26CE8AAA000CC7FD /* SampleSnackSearchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSnackSearchAppApp.swift; sourceTree = "<group>"; };
-		41DA6E3D26CE8AAA000CC7FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		41DA6E3D26CE8AAA000CC7FD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		41DA6E3F26CE8AAF000CC7FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41DA6E4226CE8AAF000CC7FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		41DA6E4426CE8AAF000CC7FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				41DA6E3B26CE8AAA000CC7FD /* SampleSnackSearchAppApp.swift */,
-				41DA6E3D26CE8AAA000CC7FD /* ContentView.swift */,
+				41784E0326CE9E4C0007A46C /* SnackData.swift */,
+				41DA6E3D26CE8AAA000CC7FD /* HomeView.swift */,
 				41DA6E3F26CE8AAF000CC7FD /* Assets.xcassets */,
 				41DA6E4426CE8AAF000CC7FD /* Info.plist */,
 				41DA6E4126CE8AAF000CC7FD /* Preview Content */,
@@ -76,6 +79,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41DA6E4726CE8AAF000CC7FD /* Build configuration list for PBXNativeTarget "SampleSnackSearchApp" */;
 			buildPhases = (
+				41784E0626CE9ED60007A46C /* Run SwiftLint */,
 				41DA6E3426CE8AAA000CC7FD /* Sources */,
 				41DA6E3526CE8AAA000CC7FD /* Frameworks */,
 				41DA6E3626CE8AAA000CC7FD /* Resources */,
@@ -133,12 +137,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		41784E0626CE9ED60007A46C /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		41DA6E3426CE8AAA000CC7FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41DA6E3E26CE8AAA000CC7FD /* ContentView.swift in Sources */,
+				41DA6E3E26CE8AAA000CC7FD /* HomeView.swift in Sources */,
+				41784E0426CE9E4D0007A46C /* SnackData.swift in Sources */,
 				41DA6E3C26CE8AAA000CC7FD /* SampleSnackSearchAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
