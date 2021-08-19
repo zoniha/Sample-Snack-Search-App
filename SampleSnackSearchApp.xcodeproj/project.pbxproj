@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		41784E0426CE9E4D0007A46C /* SnackData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41784E0326CE9E4C0007A46C /* SnackData.swift */; };
+		41784E0B26CED8900007A46C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41784E0A26CED8900007A46C /* DetailView.swift */; };
 		41DA6E3C26CE8AAA000CC7FD /* SampleSnackSearchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA6E3B26CE8AAA000CC7FD /* SampleSnackSearchAppApp.swift */; };
 		41DA6E3E26CE8AAA000CC7FD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DA6E3D26CE8AAA000CC7FD /* HomeView.swift */; };
 		41DA6E4026CE8AAF000CC7FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41DA6E3F26CE8AAF000CC7FD /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		41784E0326CE9E4C0007A46C /* SnackData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackData.swift; sourceTree = "<group>"; };
+		41784E0A26CED8900007A46C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailView.swift; path = SampleSnackSearchApp/DetailView.swift; sourceTree = "<group>"; };
 		41DA6E3826CE8AAA000CC7FD /* SampleSnackSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleSnackSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41DA6E3B26CE8AAA000CC7FD /* SampleSnackSearchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSnackSearchAppApp.swift; sourceTree = "<group>"; };
 		41DA6E3D26CE8AAA000CC7FD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 		41DA6E2F26CE8AAA000CC7FD = {
 			isa = PBXGroup;
 			children = (
+				41784E0A26CED8900007A46C /* DetailView.swift */,
 				41DA6E3A26CE8AAA000CC7FD /* SampleSnackSearchApp */,
 				41DA6E3926CE8AAA000CC7FD /* Products */,
 			);
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41DA6E3E26CE8AAA000CC7FD /* HomeView.swift in Sources */,
+				41784E0B26CED8900007A46C /* DetailView.swift in Sources */,
 				41784E0426CE9E4D0007A46C /* SnackData.swift in Sources */,
 				41DA6E3C26CE8AAA000CC7FD /* SampleSnackSearchAppApp.swift in Sources */,
 			);
